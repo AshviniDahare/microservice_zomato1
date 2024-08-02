@@ -1,16 +1,18 @@
 package com.Zomato_Consumer.model;
 
-import org.hibernate.annotations.GeneratorType;
-import org.hibernate.annotations.ManyToAny;
+
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="OrderDetails_Zomato")
 public class Orderdetails {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
